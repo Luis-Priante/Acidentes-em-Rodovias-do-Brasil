@@ -1,14 +1,37 @@
-index.html.
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Relatório Looker Studio</title>
-    <style>
-      html, body { margin: 0; height: 100%; }
-      iframe { border: 0; width: 100%; height: 100%; }
-    </style>
-  </head>
-  <body>
-    <iframe src="https://lookerstudio.google.com/embed/reporting/30aae27d-deaa-4acc-8c2c-bf4b3164e0eb/page/H31uF" allowfullscreen></iframe>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Relatório Looker Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      background-color: #f5f5f5;
+    }
+    .report-container {
+      width: 100%;
+      height: 100vh;
+      border: none;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="report-container">
+    <iframe
+      src="https://lookerstudio.google.com/embed/reporting/30aae27d-deaa-4acc-8c2c-bf4b3164e0eb/page/H31uF"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
 </html>
