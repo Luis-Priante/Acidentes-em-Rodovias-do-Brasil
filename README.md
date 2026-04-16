@@ -140,4 +140,9 @@ No mesmo painel (dashboard), incluir:
 
 #### Filtros interativos
 - Filtro por período.  
-- Filtro por UF.  
+- Filtro por UF.
+
+### Relatório Looker Studio
+
+- Acesse o relatório completo aqui: [Abrir relatório no Looker Studio](https://datastudio.google.com/s/vAC4GFhTq6w)
+
