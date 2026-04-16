@@ -43,7 +43,7 @@ Os dados da Polícia Rodoviária Federal (PRF) trazem, para cada ocorrência, in
 
 ## 3. Análise Exploratória de Dados (EDA) – Roteiro
 
-Analisaremos os meses de janeiro e fevereiro do ano vigente (2026), pois são os dados que até o momento estão disponibilizados no site da PRF no arquivo “Acidentes por ocorrência”.
+Analisado os meses de janeiro e fevereiro do ano vigente (2026), pois são os dados que até o momento estão disponibilizados no site da PRF no arquivo “Acidentes por ocorrência”.
 
 ### 3.1 Limpeza e pré-processamento
 
@@ -53,29 +53,24 @@ Analisaremos os meses de janeiro e fevereiro do ano vigente (2026), pois são os
 - Importar o CSV:  
   - Google Planilhas: `Arquivo > Importar` (ou carregar para o Drive e abrir).  
 - Ajustar separador decimal e formato de data/hora.  
-- Criar campo de **região** (N, NE, CO, SE, S) a partir da UF.
+- Criar campo a partir do estado da ocorrência UF e período.
 
 ### 3.2 Análise descritiva
 
 **Medidas gerais:**
 - Total de acidentes no ano.  
-- Percentual de acidentes com mortos / feridos graves.
+- Percentual de acidentes com mortos.
 
 **Distribuições e padrões:**
-- Acidentes por UF e por rodovia.  
+- Acidentes por UF..  
 - Acidentes por tipo de acidente (colisão frontal, saída de pista, atropelamento etc.).  
-- Acidentes por horário e dia da semana.  
-- Distribuição por condição climática (tempo bom, chuva etc.).
+- Quantidade de acidentes totais e acidentes com mortes.  
+- Distribuição por quantidade de acidentes por gravidade (feridos graves, feridos leves, ilesos etc.).
 
 ### 3.3 Identificação de variáveis importantes e correlações
 
-**Variáveis candidatas:**
-- Gravidade do acidente (nº de mortos/feridos).  
-- Tipo de via/pista, tipo de acidente, horário, dia da semana, condição climática.
-
 **Análises:**
-- Tabelas cruzadas (ex.: gravidade × tipo de acidente, gravidade × horário).  
-- Correlação (quando forem variáveis numéricas, como nº de veículos envolvidos × nº de vítimas).
+- Tabelas cruzadas (ex.: gravidade × tipo de acidente).
 
 ---
 
@@ -97,9 +92,7 @@ Analisaremos os meses de janeiro e fevereiro do ano vigente (2026), pois são os
 #### 4.3 Principais resultados (com gráficos/tabelas)
 **Exemplos de possíveis insights (a confirmar com os dados reais):**
 - Maior concentração de acidentes graves em determinados estados/rodovias.  
-- Horários e dias com maior ocorrência de acidentes fatais (ex.: noite de fim de semana).  
 - Tipos de acidente que mais geram mortes (ex.: colisão frontal, atropelamento).  
-- Influência de chuva ou outras condições climáticas na gravidade.
 
 #### 4.4 Discussão e relevância para a problemática
 - Relacionar os padrões encontrados com fatores:
@@ -134,7 +127,7 @@ No mesmo painel (dashboard), incluir:
 - Taxa de acidentes com morte (%).
 
 #### Séries temporais
-- Linha: nº de acidentes por mês (ou por semana).  
+
 - Linha separando acidentes totais e acidentes com morte.
 
 #### Distribuição geográfica
@@ -142,12 +135,9 @@ No mesmo painel (dashboard), incluir:
   - Quantidade de acidentes, ou  
   - Quantidade de mortos.
 
-#### Gráficos de barras
+#### Gráficos Pizza
 - Acidentes por tipo de acidente.  
-- Acidentes por faixa de horário.  
-- Acidentes por condição climática.
 
 #### Filtros interativos
-- Filtro por mês.  
+- Filtro por período.  
 - Filtro por UF.  
-- Filtro por gravidade (com morte, sem morte).
